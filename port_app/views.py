@@ -11,3 +11,9 @@ def index(request):
 
 #def tree(request):
     #return render(request, 'tree.html')
+
+def linkedin(request):
+    return render(request, )
+
+def github(request):
+    return render(request, 'https://github.com/JakeZ34')
