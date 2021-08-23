@@ -35,20 +35,21 @@ and is wrapped around the whole page content, except for the footer in this exam
             <div class="w3-col l8 s12">
                 <!-- Blog entry -->
                 <div class="w3-card-4 w3-margin w3-white">
-                    <img src="/w3images/woods.jpg" alt="" style="width:100%">
+                    <!--<img src="/w3images/woods.jpg" alt="" style="width:100%"> -->
                     <div class="w3-container">
                         <h3><b>ABOUT ME</b></h3>
                         <h5><span class="w3-opacity">Sports + Computers</span></h5>
                     </div>
 
                     <div class="w3-container">
-                        <p>I played Baseball into college among other sports, until I was injured. When I wasn't playing sports I was always an avid tech user, starting from a young age.</p>
+                        <p>I played Baseball into college among other sports, until I was injured. When I wasn't playing
+                            sports I was always an avid tech user, starting from a young age.</p>
                         <div class="w3-row">
                             <div class="w3-col m8 s12">
                                 <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE
                                             »</b></button></p>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -56,18 +57,20 @@ and is wrapped around the whole page content, except for the footer in this exam
 
                 <!-- Blog entry -->
                 <div class="w3-card-4 w3-margin w3-white">
-                    <img src="/w3images/bridge.jpg" alt="" style="width:100%">
+                    <!--<img src="/w3images/bridge.jpg" alt="" style="width:100%"> -->
                     <div class="w3-container">
                         <h3><b>MY PROJECTS</b></h3>
                         <h5><span class="w3-opacity">ClipZone + Scraper API</span></h5>
                     </div>
                     <div class="w3-container">
-                        <p>The first project I have to show you is my personal Solo Project where users can upload Video Game clips.</p>
+                        <p>The first project I have to show you is my personal Solo Project where users can upload Video
+                            Game clips.</p>
                         <p>The second project is a group project that uses a scraper API to get prices of items.</p>
                         <div class="w3-row">
                             <div class="w3-col m8 s12">
-                                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>CHECK OUT MY PROJECTS
-                                            »</b></button></p>
+                                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>CHECK OUT MY
+                                            PROJECTS
+                                            »</b></button></p><!--Connect to ClipZone deployed or undeployed?-->
                             </div>
                         </div>
                     </div>
@@ -82,40 +85,43 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <!-- <img src="/w3images/avatar_g.jpg" style="width:100%"> -->
                     <div class="w3-container w3-white">
                         <h4><b>JAKE ZIELINSKI</b></h4>
-                        <p>This website is a little about me, as well as showcasing some of the projects I've worked on so far.</p>
+                        <p>This website is a little about me, as well as showcasing some of the projects I've worked on
+                            so far.</p>
                     </div>
                 </div>
                 <hr>
 
                 <!-- Posts -->
+                {% load static %}
                 <div class="w3-card w3-margin">
                     <div class="w3-container w3-padding">
                         <h4>My Programming Languages</h4>
                     </div>
                     <ul class="w3-ul w3-hoverable w3-white">
                         <li class="w3-padding-16">
-                            <img src="/w3images/workshop.jpg" alt="" class="w3-left w3-margin-right"
-                                style="width:50px">
+                            <img src="{% static 'img/pythonimage.jpg' %}" alt="pyimage" class="w3-left w3-margin-right"
+                                style="width:50px" />
                             <span class="w3-large">Python</span><br>
                             <span>Full Stack Python/Django</span>
                         </li>
                         <li class="w3-padding-16">
-                            <img src="/w3images/gondol.jpg" alt="" class="w3-left w3-margin-right"
-                                style="width:50px">
+                            <img src="{% static 'img/htmlimg.jpg' %}" alt="htmlimage" class="w3-left w3-margin-right" style="width:50px">
                             <span class="w3-large">HTML</span><br>
-                            <span>Front end styling of websites</span>
+                            <span>For front end styling of websites</span>
                         </li>
                         <li class="w3-padding-16">
-                            <img src="/w3images/skies.jpg" alt="" class="w3-left w3-margin-right"
-                                style="width:50px">
+                            <img src="{% static 'img/css-logo.jpg' %}" alt="cssimage" class="w3-left w3-margin-right" style="width:50px;height: 50px;">
                             <span class="w3-large">CSS</span><br>
                             <span>For more intracit static styling of websites</span>
                         </li>
+                        <li class="w3-padding-16">
+                            <img src="{% static 'img/js-logo.jpg' %}" alt="jscriptlogo" class="w3-left w3-margin-right" style="width:50px">
+                            <span class="w3-large">Javascript</span><br>
+                            <span>For website scripts and advanced design</span>
                         <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-                            <img src="/w3images/rock.jpg" alt="" class="w3-left w3-margin-right"
-                                style="width:50px">
-                            <span class="w3-large">Bootstrap and Javascript</span><br>
-                            <span>For importing templates when applicable into websites</span>
+                            <img src="{% static 'img/bootstrap-logo.jpg' %}" alt="bootlogo" class="w3-left w3-margin-right" style="width:50px">
+                            <span class="w3-large">Bootstrap</span><br>
+                            <span>For importing templates into websites</span>
                         </li>
                     </ul>
                 </div>
