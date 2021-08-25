@@ -26,8 +26,19 @@ and is wrapped around the whole page content, except for the footer in this exam
         <header class="w3-container w3-center w3-padding-32">
             <h1><b>MY PORTFOLIO</b></h1>
             <p>Welcome to the portfolio of <span class="w3-tag">JAKE ZIELINSKI</span></p>
-            <p><a href="https://github.com/JakeZ34">GitHub</a></p>
-            <p><a href="https://www.linkedin.com/in/jacob-zielinski34/">LinkedIn</a></p>
+            <p><a href="https://github.com/JakeZ34" style="
+                padding-right: 50px;
+            ">GitHub</a> <a href="https://www.linkedin.com/in/jacob-zielinski34/">LinkedIn</a></p>
+            <!--<p><a href="https://www.linkedin.com/in/jacob-zielinski34/">LinkedIn</a></p> -->
+            <p id="over" onmouseover="mouseOver()" onmouseout="mouseOut()">JzBaseball34@hotmail.com for any inquiries</p>
+            <script>
+            function mouseOver() {
+                document.getElementById("over").style.color ="black";
+            }
+            function mouseOut() {
+                document.getElementById("over").style.color ="white";
+            }
+            </script>
         </header>
 
         <!-- Grid -->
@@ -48,10 +59,18 @@ and is wrapped around the whole page content, except for the footer in this exam
                             sports I was always an avid tech user, starting from a young age.</p>
                         <div class="w3-row">
                             <div class="w3-col m8 s12">
-                                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE
+                                <p><button id="w3-button w3-padding-large w3-white w3-border"><b>READ MORE
                                             »</b></button></p>
-                            </div>
+                                            <script>
+                                                document.getElementById("w3-button w3-padding-large w3-white w3-border").onclick = function () {
+                                                    myFunction()
+                                                };
 
+                                                function myFunction() {
+                                                    document.getElementById("w3-button w3-padding-large w3-white w3-border").innerHTML = "Just kidding, but I'd love to answer your questions in an interview.";
+                                                }
+                                            </script>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -77,6 +96,18 @@ and is wrapped around the whole page content, except for the footer in this exam
                         </div>
                     </div>
                 </div>
+                <div class="w3-card-4 w3-margin w3-white">
+                    <!--<img src="/w3images/bridge.jpg" alt="" style="width:100%"> -->
+                    <div class="w3-container" style="
+                        margin-top: 35px;
+                    ">
+                        <p style="
+                            padding-bottom: 10px;
+                            padding-left: 50px;
+                            font-size: 16px;
+                        ">Languages and Databases I have some experience in or am currently learning: MySQL, React, AWS, Java.</p>
+                    </div>
+                </div>
                 <!-- END BLOG ENTRIES -->
             </div>
 
@@ -87,10 +118,10 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <!-- <img src="/w3images/avatar_g.jpg" style="width:100%"> -->
                     <div class="w3-container w3-white">
                         <h4 style="
-                            padding-left: 105px;
+                            padding-left: 115px;
                         "><b>JAKE ZIELINSKI</b></h4>
-                        <p>This website is a little about me, as well as showcasing some of the projects I've worked on
-                            so far.</p>
+                        <p>This website is about me, as well as some of the projects I've worked on
+                            so far and showcasing my current skills.</p>
                     </div>
                 </div>
                 <hr>
@@ -108,41 +139,41 @@ and is wrapped around the whole page content, except for the footer in this exam
                             <img src="{% static 'img/pythonimage.jpg' %}" alt="pyimage" class="w3-left w3-margin-right"
                                 style="width:50px" />
                             <span class="w3-large" style="
-                                padding-left: 80px;">Python</span><br>
+                                padding-left: 90px;">Python</span><br>
                             <span style="
-                                padding-left: 10px;
+                                padding-left: 20px;
                             ">Full Stack of Python and Django</span>
                         </li>
                         <li class="w3-padding-16">
                             <img src="{% static 'img/htmlimg.jpg' %}" alt="htmlimage" class="w3-left w3-margin-right" style="width:50px">
                             <span class="w3-large" style="
-                            padding-left: 85px;">HTML</span><br>
+                            padding-left: 95px;">HTML</span><br>
                             <span style="
-                            padding-left: 10px;
-                            ">For front end styling of websites</span>
+                            padding-left: 20px;
+                            ">Front end styling of websites</span>
                         </li>
                         <li class="w3-padding-16">
                             <img src="{% static 'img/css-logo.jpg' %}" alt="cssimage" class="w3-left w3-margin-right" style="width:50px;height: 50px;">
                             <span class="w3-large" style="
-                            padding-left: 85px;">CSS</span><br>
+                            padding-left: 95px;">CSS</span><br>
                             <span style="
-                            padding-left: 10px;
-                            ">For more intracit static styling of websites</span>
+                            padding-left: 20px;
+                            ">More intricate static styling of websites</span>
                         </li>
                         <li class="w3-padding-16">
                             <img src="{% static 'img/js-logo.jpg' %}" alt="jscriptlogo" class="w3-left w3-margin-right" style="width:50px;height: 50px;">
                             <span class="w3-large" style="
-                            padding-left: 80px;">Javascript</span><br>
+                            padding-left: 90px;">Javascript</span><br>
                             <span style="
-                            padding-left: 10px;
-                            ">For website scripts and advanced design</span>
+                            padding-left: 20px;
+                            ">Website scripts and advanced design</span>
                         <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-                            <img src="{% static 'img/bootstrap-logo.jpg' %}" alt="bootlogo" class="w3-left w3-margin-right" style="width:50px">
+                            <img src="{% static 'img/bootstrap-logo.jpg' %}" alt="bootlogo" class="w3-left w3-margin-right" style="width:50px;height: 50px;">
                             <span class="w3-large" style="
-                            padding-left: 80px;">Bootstrap</span><br>
+                            padding-left: 90px;">Bootstrap</span><br>
                             <span style="
-                            padding-left: 10px;
-                        ">For importing templates into websites</span>
+                            padding-left: 20px;
+                        ">Importing templates into websites</span>
                         </li>
                     </ul>
                 </div>
