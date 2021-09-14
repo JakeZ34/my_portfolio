@@ -15,10 +15,13 @@
     h4,
     h5 {
         font-family: "Raleway", sans-serif;
+        color: royalblue;
     }
 </style>
 
-<body class="w3-light-grey">
+<body class="testing" style="
+    background-color: #ff9800;
+">
 
     <div class="w3-content" style="max-width:1400px">
 
@@ -33,11 +36,11 @@
             </p>
             <script>
                 function mouseOver() {
-                    document.getElementById("over").style.color = "black";
+                    document.getElementById("over").style.color = "royalblue";
                 }
 
                 function mouseOut() {
-                    document.getElementById("over").style.color = "white";
+                    document.getElementById("over").style.color = "#ff9800";
                 }
             </script>
         </header>
@@ -46,7 +49,9 @@
         <div class="w3-row">
 
 
-            <div class="w3-col l8 s12">
+            <div class="w3-col l8 s12" style="
+                background-color: #3f51b5;
+            ">
 
                 <div class="w3-card-4 w3-margin w3-white">
                     <!-- <img src="/w3images/woods.jpg" alt="" style="width:100%"> -->
@@ -71,14 +76,16 @@
                                     function myFunction() {
                                         document.getElementById("w3-button w3-padding-large w3-white w3-border")
                                             .innerHTML =
-                                            "Just kidding, but I'd love to answer your questions in an interview.";
+                                            "Just kidding but I'd love to answer any questions about me in an interview.";
                                     }
                                 </script>
                             </div>
                         </div>
                     </div>
                 </div>
-                <hr>
+                <hr style="
+                    border-top-width: 0px;
+                ">
 
 
                 <div class="w3-card-4 w3-margin w3-white">
@@ -119,7 +126,10 @@
             </div>
 
 
-            <div class="w3-col l4">
+            <div class="w3-col l4" style="
+                background-color: #3f51b5;
+                height: 640px;
+            ">
 
                 <div class="w3-card w3-margin w3-margin-top">
                     <!-- <img src="/w3images/avatar_g.jpg" style="width:100%"> -->
@@ -132,12 +142,16 @@
                             so far and showcasing my current skills.</p>
                     </div>
                 </div>
-                <hr>
+                <hr style="
+                    border-top-width: 0px;
+                ">
 
 
                 {% load static %}
                 <div class="w3-card w3-margin">
-                    <div class="w3-container w3-padding">
+                    <div class="w3-container w3-padding" style="
+                        background-color:#f1f1f1;
+                    ">
                         <h4 style="
                             padding-left: 25px;
                             font-weight: bold;
@@ -190,7 +204,9 @@
                         </li>
                     </ul>
                 </div>
-                <hr>
+                <hr style="
+                    border-top-width: 0px;
+                ">
 
 
 
